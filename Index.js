@@ -6,7 +6,7 @@ const bodyParser=require('body-parser')
 const app=express()
 const Visitor=require('../backend/database/Users')
 const Router =require('./Api/Routes')
-const port=process.env.port
+// const port=process.env.port
 
 app.use(cors())
 app.use(bodyParser.urlencoded({extended:true}))
@@ -28,6 +28,6 @@ app.get('/',(req,res)=>{
 
     
        
-app.listen(port,()=>{
+app.listen(4000,()=>{
     console.log("Server is running on 4000")
 })
