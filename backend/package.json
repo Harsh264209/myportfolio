@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"npm i",
-    "dev":"nodemon index.js"
-  },
+"scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "prebuild": "rm -rf dist",  // Remove the existing dist directory before building
+  "build": "npm i",  // Add your actual build command here
+  "dev": "nodemon index.js"
+},
+
   "author": "",
   "license": "ISC",
   "dependencies": {
