@@ -5,7 +5,7 @@
   "main": "index.js",
 "scripts": {
   "test": "echo \"Error: no test specified\" && exit 1",
-  "build": "npm i",  // Add your actual build command here
+  "build": "npm i",  
   "dev": "nodemon index.js"
 },
 
